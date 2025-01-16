@@ -4,14 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>APACHE SQOOP Download</title>
-    <script type="text/javascript">
-        window.onload = function() {
-            window.location.href = 'APACHE SQOOP.pdf'; 
-            setTimeout(function() {
-                window.history.back();
-            }, 1000); 
-        };
-    </script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -39,5 +31,14 @@
         <p>Français: Ce fichier est destiné à des fins éducatives et est la propriété de Salma Hafiani. Toute reproduction ou modification sans autorisation est interdite.</p>
         <p>العربية: هذا الملف مخصص لأغراض تعليمية وهو ملكية لـ سالمة حفياني. أي إعادة إنتاج أو تعديل بدون إذن محظورة.</p>
     </div>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            var link = document.createElement('a');
+            link.href = 'APACHE SQOOP.pdf';
+            link.download = 'APACHE SQOOP.pdf';
+            link.click();
+        };
+    </script>
 </body>
 </html>
